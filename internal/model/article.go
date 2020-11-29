@@ -2,11 +2,11 @@ package model
 
 type Article struct {
 	*Model
-	Title         string
-	Desc          string
-	Content       string
-	CoverImageUrl string
-	State         uint8
+	Title         string `json:"title"`
+	Desc          string `json:"desc"`
+	Content       string `json:"content"`
+	CoverImageUrl string `json:"cover_imag_url"`
+	State         uint8  `json:"state"`
 }
 
 func (a Article) TableName() string {
