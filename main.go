@@ -24,6 +24,11 @@ func init() {
 	if err != nil {
 		log.Fatalf("init.setupLogger err: %v", err)
 	}
+	//初始化数据库
+	err = setupDBEngine()
+	if err != nil {
+		log.Fatalf("init.setupDBEngine err: %v", err)
+	}
 }
 
 //读全剧配置信息
@@ -74,6 +79,10 @@ func setupLogger() error {
 	return nil
 }
 
+//@title 博客系统
+//@version 1.0
+//@description Go 语言编程之旅：一起用 Go 做项目
+//@termsOfService https://github.com/nearbyren/
 func main() {
 	////加载yaml配置文件
 	gin.SetMode(global.ServerSetting.RunMode)

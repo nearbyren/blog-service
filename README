@@ -10,4 +10,4 @@ internal        内部模块
 pkg             项目相关模块包
 storage         项目生成的临时文件
 scripts         各类构建、安装、分析等操作脚本
-third_party     第三方的资料工具，如Swagger UI
+third_party     第三方的资料工具，如Swagger UI http://127.0.0.1:8000/swagger/index.html
